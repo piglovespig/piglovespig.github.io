@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🐖❤🐖</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1em;
+        }
+        button {
+            margin-top: 1em;
+            padding: 0.5em 1em;
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body onload="calculateDays()">
     <h1>🐖❤🐖</h1>
     <label for="inputDate">输入日期:</label>
     <input type="date" id="inputDate">
-    <button onclick="calculateTodays()">🐖</button>
+    <button onclick="calculateDays()">计算天数</button>
     <p id="daysFromStart"></p>
     <p id="daysFromNow"></p>
     <p id="nextHundredDays"></p>
